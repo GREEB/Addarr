@@ -21,7 +21,10 @@ def generateServerAddr(app):
             addr = config[app]["server"]["addr"]
             port = config[app]["server"]["port"]
             path = config[app]["server"]["path"]
-            return http + addr + ":" + str(port) + path
+            if port:  # Check if the port is not empty or None
+                return f"{http}{addr}:{port}{path}"
+            else:
+                return f"{http}{addr}{path}"
         except Exception:
             logger.warn("No ip or port defined.")
     except Exception as e:
