@@ -4,6 +4,10 @@
 
 This is a Telegram Bot made to add series to [Sonarr](https://github.com/Sonarr/Sonarr) or movies to [Radarr](https://github.com/Radarr/Radarr) with a couple of commands. You can also communicate with your [Transmission](https://transmissionbt.com/)/[Sabnzbd](https://sabnzbd.org/) service to change its download speed. The bot uses the InlineKeyboard to let you select the wanted commands, as you can see in the [screenshots](#screenshots).
 
+
+## Fixed in this fork
+- Made it so no port is used if none is put into config
+
 ## FEATURES
 
 - Add series/movies to Sonarr/Radarr
